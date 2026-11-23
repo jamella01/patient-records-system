@@ -1,0 +1,7 @@
+# Disable directory listing
+Options -Indexes
+
+# Block direct access to partial/include files (names starting with "_")
+<FilesMatch "^_">
+    Require all denied
+</FilesMatch>
